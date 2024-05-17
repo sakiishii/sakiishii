@@ -24,17 +24,22 @@
     
     <div class="wapper wrap">
         <header>
-            <h1><img src="img/logo.png" alt="ロゴ"></h1>
+            <h1><a href="index.html"><img src="img/logo.png" alt="コーヒーヒヨシのロゴ"></a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
-                    <li class="dropdown dropbtn">メニュー
+                    <!-- <li class="dropdown dropbtn">メニュー
                         <div class="dropdown-content">
                             <a href="drink.html">ドリンク</a>
                             <a href="food.html">フード</a>
                         </div>
+                    </li> -->
+                    <li class="dropdown dropbtn" onclick="toggleDropdown()">メニュー
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="drink.html">ドリンク</a>
+                            <a href="food.html">フード</a>
+                        </div>
                     </li>
-                    <!-- <li><a href="index.html">お食事</a></li> -->
                     <li><a href="access.html">アクセス</a></li>
                     <li><a href="form.html">お問い合わせ</a></li>
                 </ul>
@@ -50,7 +55,7 @@
                                 <h3>モーニング<br>Open～AM11:30&emsp;￥590</h3>
                                     <div class="menu_inner change">
                                         <div class="menu_inner_img morning">
-                                            <img src="img/food_morning.jpg" alt="">
+                                            <img src="img/food_morning.jpg" alt="モーニングメニュー">
                                         </div>
                                         <div class="menu_sentence">
                                             <p class="food_menu">トースト/サラダ/フルーツ/卵/スープ/ドリンク</p>
@@ -65,7 +70,7 @@
                                     <h3>Aセット</h3>
                                         <div class="menu_inner">
                                             <div class="menu_inner_img">
-                                                <img src="img/food_aset.jpg" alt="">
+                                                <img src="img/food_aset.jpg" alt="Aセットメニュー">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="food_menu">トースト/セットドリンク</p>
@@ -112,7 +117,7 @@
                                     <h3>Bセット</h3>
                                         <div class="menu_inner change">
                                             <div class="menu_inner_img">
-                                                <img src="img/food_bset.jpg" alt="">
+                                                <img src="img/food_bset.jpg" alt="Bセットメニュー">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="food_menu">トースト/サラダ/フルーツ/スープ</p>
@@ -172,7 +177,7 @@
                                     <h3>Cセット</h3>
                                         <div class="menu_inner">
                                             <div class="menu_inner_img">
-                                                <img src="img/food_cset.jpg" alt="">
+                                                <img src="img/food_cset.jpg" alt="Cセットメニュー">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="food_menu">トースト/サラダ/フルーツ/スープ/ドリンク</p>
@@ -233,7 +238,7 @@
                                     <h3>ケーキセット</h3>
                                         <div class="menu_inner change">
                                             <div class="menu_inner_img">
-                                                <img src="img/food_cake.jpg" alt="">
+                                                <img src="img/food_cake.jpg" alt="ケーキセット">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="food_menu">ケーキ/コーヒーorティ&emsp;￥680</p>
@@ -274,5 +279,7 @@
     </div>  
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/box.js"></script>
+    <script src="js/shu.js"></script>
+
 </body>
 </html>

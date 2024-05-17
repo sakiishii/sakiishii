@@ -172,6 +172,7 @@ header nav ul li a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dropdown-content {
@@ -216,6 +217,7 @@ header nav ul li a:hover {
     font-size: 1.1em;
     margin-left: 5px;
 }
+
 
 /* ここからメイン */
 
@@ -660,6 +662,7 @@ dl.accordion::after {
     padding: 10px;
     margin: 20px auto;
     text-align: center;
+    color: #fff;
 }
 
 .shop_inner {

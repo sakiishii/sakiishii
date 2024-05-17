@@ -20,12 +20,18 @@
 <body>
     <div class="wapper wrap">
         <header>
-            <h1><img src="img/logo.png" alt="ロゴ"></h1>
+            <h1><a href="index.html"><img src="img/logo.png" alt="コーヒーヒヨシのロゴ"></a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
-                    <li class="dropdown dropbtn">メニュー
+                    <!-- <li class="dropdown dropbtn">メニュー
                         <div class="dropdown-content">
+                            <a href="drink.html">ドリンク</a>
+                            <a href="food.html">フード</a>
+                        </div>
+                    </li> -->
+                    <li class="dropdown dropbtn" onclick="toggleDropdown()">メニュー
+                        <div id="myDropdown" class="dropdown-content">
                             <a href="drink.html">ドリンク</a>
                             <a href="food.html">フード</a>
                         </div>
@@ -44,7 +50,7 @@
                                     <h3>ストレートコーヒー</h3>
                                         <div class="menu_inner change">
                                             <div class="menu_inner_img">
-                                                <img src="img/scroll_1.jpg" alt="">
+                                                <img src="img/scroll_1.jpg" alt="サイフォンコーヒー写真">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="coffe_1">店主が厳選したコーヒー豆を使用。豆固有の風味や特性を最大限に引き出し、純粋なコーヒー体験を楽しめます。添加物を加えずに提供されるため、コーヒー本来の苦味や酸味、香りをダイレクトに味わうことができるのが特徴です。<br>本日のサービスコーヒーはその日によって違うコーヒーをご提供していますのでお気軽にスタッフにご確認ください。</p>
@@ -103,7 +109,7 @@
                                     <h3>コーヒー</h3>
                                         <div class="menu_inner">
                                             <div class="menu_inner_img">
-                                                <img src="img/menu_drink.jpg" alt="">
+                                                <img src="img/menu_drink.jpg" alt="コーヒーの写真">
                                             </div>
                                             <div class="menu_sentence">
                                                 <p class="coffe_1">注文を受けてから一杯ずつ丁寧にコーヒーを挽いて淹れている奥深い味わいが特徴。コーヒー豆は老舗喫茶店の豆を使用しております。独特の淹れ方で生み出される芳醇な香りと豊かな香りが特徴です。<br>是非ご賞味ください。</p>
@@ -300,5 +306,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/box.js"></script>
+    <script src="js/shu.js"></script>
+
 </body>
 </html>
