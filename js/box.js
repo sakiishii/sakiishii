@@ -5,8 +5,8 @@ $(document).ready(function(){
         if ($(window).width() <= 768) {
             var $accordionList = $(this).next('.accordion_list');
             // アクティブなアコーディオン以外を閉じる
-            $('.accordion_list').not($accordionList).find('.accordion').slideUp();
-            $('.accordion_toggle').not($(this)).removeClass('active');
+            // $('.accordion_list').not($accordionList).find('.accordion').slideUp();
+            // $('.accordion_toggle').not($(this)).removeClass('active');
             // クリックされたアコーディオンのみをトグル
             $accordionList.find('.accordion').slideToggle();
             $(this).toggleClass('active');
